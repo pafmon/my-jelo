@@ -1,0 +1,42 @@
+
+<html>
+<head><title>My JELO</title></head>
+<script src="/js/jquery.js"></script>
+<script src="/js/mediaelement-and-player.min.js"></script>
+<link rel="stylesheet" href="/css/mediaelementplayer.css" />
+<!-- http://mediaelementjs.com/#api -->
+<script>
+if (typeof window.localStorage != "undefined") {
+
+	// store
+	localStorage.setItem("hello", "Hello World!");
+
+	// retrieve
+	console.log(localStorage.getItem("hello"));
+
+	// delete
+	localStorage.removeItem("hello");
+}
+</script>
+<body>
+<div>
+    <div>
+      <ul>
+          <li>
+            <a href='http://desprogresiva.antena3.com/mp_audios5//2016/01/25/D997037D-F48E-4C09-8C42-CE5CC90E9562/D997037D-F48E-4C09-8C42-CE5CC90E9562.mp3'>
+              La sobrepoblacion de tortugas en Atocha
+            </a>
+          </li>
+          <li>Audio:
+            <audio
+              class="mejs-player"
+              data-mejsoptions='{"alwaysShowControls": true}'
+              src="http://desprogresiva.antena3.com/mp_audios5//2016/01/25/D997037D-F48E-4C09-8C42-CE5CC90E9562/D997037D-F48E-4C09-8C42-CE5CC90E9562.mp3">
+            </audio>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
